@@ -70,7 +70,7 @@ function login() {
 	 -H "Content-Type: application/x-www-form-urlencoded" \
 	 -H "Connection: keep-alive" \
 	 -H "Upgrade-Insecure-Requests: 1" \
-	 --data "$data" --write-out '%{http_code}\n' --silent --output /dev/null
+	 --data "$data" --write-out 'Status: %{http_code}\n' --silent --output /dev/null
     log "Loged"
 }
 
@@ -88,7 +88,7 @@ function updateConfig() {
 	 -H "Connection: keep-alive" \
 	 -H "Upgrade-Insecure-Requests: 1" \
 	 --data-urlencode "rcdata@$config_file" \
-	 --data "submit=Save" --write-out '%{http_code}\n' --silent --output /dev/null
+	 --data "submit=Save" --write-out 'Status: %{http_code}\n' --silent --output /dev/null
     log "Updated"
 }
 
