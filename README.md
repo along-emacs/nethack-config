@@ -1,4 +1,5 @@
 # 简介 #
+本github库基于以下目的：
   * 分享我的配置
   * 提供用于快速提交配置文件的sh脚本
 
@@ -19,6 +20,7 @@ sh update.sh
 -------------------------------------------------------------------------------
 
 # Intro #
+this github repository is based on such reasons:
   * share config
   * provide sh script for commiting your changes quickly
 
