@@ -4,7 +4,7 @@ set -euo pipefail
 
 tmpdir=$(mktemp -d -t tmp.XXXXXXXXXX)
 logfile=/tmp/mylog.txt
-maxfunclen=16
+maxfunclen=14
 
 function on_exit {
     rm -rf "$tmpdir"
